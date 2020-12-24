@@ -1,0 +1,42 @@
+@font-face {
+    src: url(../font/Bungee_Outline/BungeeOutline-Regular.ttf);
+    font-family: 'my-bungee';
+    font-weight: normal;
+}
+
+body {
+    background: red;
+}
+
+.heading h1 {
+    text-align: lefft;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'my-bungee';
+}
+
+p {
+    font-family: "Langar", cursive;
+}
+
+p.paragraph {
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+#jump-here:target {
+    border: 2px solid white;
+}
+
+p::before {
+    content: "* "
+}
+
+p::after {
+    content: " $$$ ";
+}
+
+p:nth-of-type(-n + 3) {
+    border: 2px dashed blue;
+}
