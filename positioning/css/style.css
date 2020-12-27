@@ -1,0 +1,166 @@
+@import url(normalize.css);
+
+body {
+    background-color: burlywood;
+}
+
+.second-li {
+    color: green;
+}
+
+.second-li + li {
+    color: maroon;
+}
+
+.second-li ~ li {
+    color: blueviolet;
+}
+
+li:first-child ~ li:before {
+    content: "***";
+}
+
+.z-outer {
+    height: 600px;
+    border: 2px solid springgreen;
+    position: relative;
+}
+
+.z-first, .z-second, .z-third {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.z-first {
+    background-color: steelblue;
+    bottom: 0;
+    right: 0;
+}
+
+.z-second {
+    background-color: thistle;
+    right: 0;
+    bottom: 150px;
+    z-index: 1;
+}
+
+.z-third {
+    background-color: yellow;
+    right: 0;
+    bottom: 300px;
+    z-index: -1;
+}
+
+section {
+    height: 600px;
+    border: 2px solid red;
+}
+
+.inner {
+    height: 50px;
+    width: 50px;
+}
+
+.static .inner {
+    background-color: red;
+    position: static;
+    margin: 50px;
+}
+
+.relative .inner {
+    background-color: orange;
+    position: relative;
+}
+
+.absolute {
+    position: relative;
+}
+
+.absolute .inner {
+    background-color: violet;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.fixed .inner {
+    background-color: yellowgreen;
+    position: fixed;
+}
+
+.float-left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.positioning {
+    width: 300px;
+    height: 300px;
+    background-color: navy;
+    border: 5px solid pink;
+    box-sizing: border-box;
+}
+
+.outer {
+    width: 300px;
+    height: 300px;
+    background-color: burlywood ;
+    border: 5px solid pink;
+    margin: auto; /* только по горизонтали работает */
+}
+
+
+/* .inner {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 50px 20px;
+} */
+
+.pad-div {
+    width: 100px;
+    background-color: cornflowerblue;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.block {
+    color: white;
+    vertical-align: top;
+}
+
+.outer-div {
+    font-size: 0;
+    width: 400px;
+}
+
+.one {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.two {
+    height: 200px;
+    background-color: crimson;
+    width: 200px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+a {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 2px solid crimson;
+    box-sizing: border-box;
+}
