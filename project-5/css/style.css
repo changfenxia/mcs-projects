@@ -4,16 +4,7 @@ body, h1, h2 {
     font-size: 20px;
 }
 
-.red-bg h1 {
-    margin: 0;
-    font-weight: 700;
-}
-
-.red-bg p {
-    margin: 0;
-}
-
-.red-bg {
+.header, .footer {
     background-color: #FE1A19;
     color: white;
     font-family: Helvetica, sans-serif;
@@ -22,12 +13,26 @@ body, h1, h2 {
     padding-left: 20px;
 }
 
+.header h1 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.content-container {
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
 .content {
     padding-top: 52px;
-    padding-left: 50px;
     /* пришлось поставить 50 вместо 70, потому что на 
     моем экране при паддинге 70 правый блок не влазит */
     padding-bottom: 52px;
+    width: 100%;
 }
 
 h2 {
@@ -42,9 +47,7 @@ section {
     max-width: 380px;
     border:  5px solid #E5E000;
     border-radius: 30px;
-    padding-top: 33px;
-    padding-left: 33px;
-    padding-right: 10px;
+    padding: 33px;
 }
 
 section:not(:last-child) {

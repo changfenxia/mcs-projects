@@ -4,6 +4,10 @@ body {
     background-color: burlywood;
 }
 
+li:first-child ~ li:not(:empty) {
+    font-size: 45px;
+}
+
 .second-li {
     color: green;
 }
