@@ -4,10 +4,11 @@
     height: 400px;
     background-color: aqua;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
+    align-content: center;
 }
 
 .flex-item {
@@ -18,4 +19,8 @@
 
 .emo {
     font-size: 8em;
+}
+
+.one {
+
 }
