@@ -1,61 +1,67 @@
-@import url(normalize.css);
-
-body, h1, h2 {
-    font-size: 20px;
+/* @import url(normalize.css); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+:root {
+    --font-primary: Helvetica, sans-serif;
+    --font-content: 'Times New Roman', serif;
+}
+
+html {
+    font-family: var(--font-content);
+    font-size: 10px;
+}
+
+body, h1, h2 { font-size: 2rem; }
 
 .header, .footer {
     background-color: #FE1A19;
     color: white;
-    font-family: Helvetica, sans-serif;
+    font-family: var(--font-primary);
     font-weight: 700;
-    line-height: 60px;
-    padding-left: 20px;
+    line-height: 6rem;
+    padding-left: 2rem;
 }
 
-.header h1 {
-    margin: 0;
-    font-weight: 700;
-}
+.header h1 { font-weight: 700; }
 
-.footer p {
-    margin: 0;
-}
-
-.content-container {
+/* .content-container {
     margin: 0 auto;
     max-width: 1250px;
-}
+} */
 
 .content {
-    padding-top: 52px;
+    padding-top: 5.2rem;
     /* пришлось поставить 50 вместо 70, потому что на 
     моем экране при паддинге 70 правый блок не влазит */
-    padding-bottom: 52px;
-    width: 100%;
+    padding-bottom: 5.2rem;
+    text-align: center;
+    font-size: 0;
 }
 
 h2 {
-    margin: 0;
-    font-family: Helvetica, sans-serif;
+    margin-bottom: 2rem;
+    font-family: var(--font-primary);
 }
 
 section {
     display: inline-block;
     vertical-align: top;
-    box-sizing: border-box;
-    max-width: 380px;
-    border:  5px solid #E5E000;
-    border-radius: 30px;
-    padding: 33px;
+    text-align: left;
+    max-width: 38rem;
+    border:  0.5rem solid #E5E000;
+    border-radius: 3rem;
+    padding: 3.3rem;
 }
 
-section:not(:last-child) {
-    margin-right: 50px;
-}
+section:not(:last-child) { margin-right: 5rem; }
 
 pre {
+    font-family: inherit;
+    font-size: 2rem;
     white-space: pre-wrap;
-    font-family: 'Times New Roman', serif;
-    line-height: 23px;
+    line-height: 2.3rem;
 }
