@@ -19,8 +19,17 @@
 
 .emo {
     font-size: 8em;
+    text-align: center;
 }
 
 .one {
 
+}
+
+.two {
+    background-color: darksalmon;
+}
+
+.three {
+    background-color: deeppink;
 }
