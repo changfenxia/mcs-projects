@@ -13,7 +13,7 @@
 
 .flex-item {
     width: 200px;
-    background-color: blueviolet;
+    height: 200px;
     font-size: 8em;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .one {
-
+    background-color: blueviolet;
 }
 
 .two {
@@ -33,3 +33,13 @@
 .three {
     background-color: deeppink;
 }
+
+.four {
+    background-color: deepskyblue;
+}
+
+.four:hover {
+    background-image: url('https://trashbox.ru/ifiles/1338636_9f12b1_screenshot_05.png-orig/vlad-a4-wallpapers-android-7.jpg');
+    background-size: contain;
+}
+
