@@ -53,7 +53,7 @@ h1 {
 .hero {
     /* width: 144rem; */
     height: 95rem;
-    background-image: url("img/evian_origins_logo.png");
+    background-image: url("../img/evian_origins_logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
