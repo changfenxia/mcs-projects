@@ -1,1 +1,88 @@
-@import url(reset.css);
+/* @import url(reset.css); */
+
+:root {
+    --color-primary: #F8BFC7;
+    --color-secondary: #E50043;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: #000;
+}
+
+.header {
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.header a {
+    font-size: 5rem;
+    line-height: 14rem;
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:not(:last-child) {
+    margin-right: 25px;
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-secondary);
+}
+
+.hero {
+    /* width: 144rem; */
+    height: 95rem;
+    background-image: url("/img/evian_origins_logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+
+.border {
+    border: 3px solid var(--color-primary);
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.content {
+    font-size: 2.5rem;
+    line-height: 2.875rem;
+    padding: 0 20rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 2.875rem;
+    font-weight: normal;
+    margin-bottom: 2.875rem;
+}
+
+.footer {
+    font-size: 5rem;
+    color: #fff;
+    background-color: var(--color-primary);
+}
