@@ -54,7 +54,7 @@ h1 {
     /* width: 144rem; */
     height: 95rem;
     background-image: url("/img/evian_origins_logo.png");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -66,6 +66,7 @@ h1 {
     border: 3px solid var(--color-primary);
     border-radius: 2rem;
     padding: 3rem;
+    margin-bottom: 15rem;
 }
 
 .content {
@@ -81,8 +82,38 @@ h2 {
     margin-bottom: 2.875rem;
 }
 
+.bottles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15rem;
+}
+
+.bottles img {
+    margin-bottom: 4rem;
+}
+
+.bottles p {
+    text-align: center;
+}
+
+.composition {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8rem;
+}
+
+.composition-text {
+    flex-basis: 75rem;
+}
+
+.composition-text p:not(:last-child) {
+    margin-bottom: 2.875rem;
+}
+
 .footer {
     font-size: 5rem;
+    line-height: 14rem;
+    padding-left: 5rem;
     color: #fff;
     background-color: var(--color-primary);
 }
