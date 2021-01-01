@@ -13,13 +13,13 @@
 }
 
 html {
-    font-family: Arial, sans-serif;
     font-size: 10px;
-    color: #000;
 }
 
-.header {
-
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    font-size: 2.5rem;
 }
 
 nav {
@@ -54,7 +54,7 @@ h1 {
     /* width: 144rem; */
     height: 95rem;
     background-image: url("../img/evian_origins_logo.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -70,13 +70,11 @@ h1 {
 }
 
 .content {
-    font-size: 2.5rem;
     line-height: 2.875rem;
     padding: 0 20rem;
 }
 
 h2 {
-    font-size: 2.5rem;
     line-height: 2.875rem;
     font-weight: normal;
     margin-bottom: 2.875rem;
