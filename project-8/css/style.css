@@ -67,17 +67,17 @@ h2 {
 }
 
 .teemo .hero-image {
-    background-image: url("/img/teemo.jpg");
+    background-image: url("img/teemo.jpg");
 }
 
 .yi .hero-image {
-    background-image: url('/img/yi.jpg');
+    background-image: url('img/yi.jpg');
     background-position: -9em;
 
 }
 
 .darius .hero-image {
-    background-image: url('/img/joshua-brian-smith-dunkmaster-darius.jpg');
+    background-image: url('img/joshua-brian-smith-dunkmaster-darius.jpg');
     background-position: -6em;
 }
 
