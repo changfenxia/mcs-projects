@@ -1,1 +1,56 @@
 @import url(reset.css);
+
+* {
+    outline: 1px dashed palevioletred;
+}
+.columns {
+    min-width: 500px;
+    display: flex;
+    background-color: rgb(168, 35, 35);
+}
+
+.columns .two {
+    width: 240px;
+    height: 720px;
+    background-color: plum;
+}
+
+.columns .one {
+    height: 1020px;
+    background-color: rgb(81, 144, 202);
+    width: calc(100% - 240px);
+}
+
+.columns-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columns-2 .column {
+    width: calc((100% - 80px) / 3);
+    height: 20vh;
+    background-color: rgb(25, 89, 209);
+}
+
+.columns-3 {
+    width: 80vw;
+    display: flex;
+    margin: auto;
+    min-height: 600px;
+    background-color: rgb(148, 223, 62);
+    justify-content: space-between;
+    align-items: stretch;
+}
+.columns-3 .column {
+    width: calc((100% - 40px) / 3);
+    background-color: rgb(219, 128, 181)
+}
+
+.image {
+    background-image: url('https://i.pinimg.com/originals/1b/87/03/1b8703af49e65c25c0a205b9c86abef4.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100%;
+}
+
+
