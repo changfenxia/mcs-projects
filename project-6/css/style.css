@@ -28,6 +28,10 @@ nav {
     padding: 0 50px;
 }
 
+.header {
+    max-width: 144rem;
+}
+
 .header a {
     font-size: 5rem;
     line-height: 14rem;
@@ -71,7 +75,8 @@ h1 {
 
 .content {
     line-height: 2.875rem;
-    padding: 0 20rem;
+    max-width: 104rem;
+    margin: auto;
 }
 
 h2 {
@@ -114,4 +119,5 @@ h2 {
     padding-left: 5rem;
     color: #fff;
     background-color: var(--color-primary);
+    max-width: 144rem;
 }
