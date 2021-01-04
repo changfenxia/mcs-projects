@@ -33,6 +33,8 @@ h1, h2 {
 
 .content-container {
     padding: 2.2rem;
+    padding-top: calc(7vw);
+    padding-bottom: calc(7vw);
 }
 
 .row {
@@ -71,7 +73,8 @@ h1, h2 {
 
     .row {
         flex-direction: row;
-        width: calc((100vw - 22rem));
+        /* width: calc((100vw - 22rem)); */
+        width: calc((85vw));
         margin: 0 auto;
     }
 
@@ -81,8 +84,10 @@ h1, h2 {
 
     .content-container section {
         /* width: 60rem; */
-        width: calc((100vw - 24rem) / 2);
-        height: 30rem;
+        /* width: calc((100vw - 24rem) / 2); */
+        width: calc(85vw / 2);
+        /* height: 30rem; */
+        min-height: calc(85vw / 4);
         margin-bottom: 0;
     }
 
@@ -95,8 +100,8 @@ h1, h2 {
     }
 
     h2 {
-        font-size: 3.5rem;
-        line-height: 3.85rem;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
     }
 }
 
