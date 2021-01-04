@@ -74,14 +74,14 @@ h2 {
 }
 
 .yi .hero-image {
-    background-image: url('../img/yi.jpg');
-    background-position: -9em;
+    background-image: url('../img/yi-square.png');
+    /* background-position: -9em; */
 
 }
 
 .darius .hero-image {
-    background-image: url('../img/joshua-brian-smith-dunkmaster-darius.jpg');
-    background-position: -6em;
+    background-image: url('../img/darius-square.png');
+    /* background-position: -6em; */
 }
 
 .footer {
