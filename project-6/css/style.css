@@ -34,8 +34,8 @@ nav {
 }
 
 .header-container, .footer-container {
-    max-width: 144rem;
-    margin: auto;
+    /* max-width: 144rem;
+    margin: auto; */
 }
 
 .header a {
