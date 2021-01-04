@@ -46,6 +46,7 @@ h2 {
 .content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 7rem;
 }
 
