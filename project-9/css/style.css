@@ -1,7 +1,7 @@
-@import url(reset.css);
+/* @import url(reset.css); */
 
 :root {
-    --color-primary: #fff;
+    --color-primary: #0000FF;
 }
 
 * {
@@ -12,4 +12,97 @@
 
 html {
     font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+
+.header, .footer {
+    padding-left: 3rem;
+    background-color: var(--color-primary);
+    line-height: 10rem;
+    color: white;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.content-container {
+    padding: 2.2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    /* height: calc((100vh - 24rem) / 2); */
+    width: 33rem;
+    margin: 0 auto;
+}
+
+.row:nth-child(2n + 1) {
+    margin-bottom: 4rem;
+}
+
+.content-container section {
+    line-height: 2.875rem;
+    text-align: center;
+    border: 0.5rem solid hsl(0, 29%, 11%);
+    height: 16.5rem;
+    width: 33rem;
+    padding: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container section:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 667px) {
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .row {
+        flex-direction: row;
+        width: calc((100vw - 22rem));
+        margin: 0 auto;
+    }
+
+    .row:nth-child(2n + 1) {
+        margin-bottom: 2rem;
+    }
+
+    .content-container section {
+        /* width: 60rem; */
+        width: calc((100vw - 24rem) / 2);
+        height: 30rem;
+        margin-bottom: 0;
+    }
+
+    .content-container section:first-child {
+        margin-right: 2rem;
+    }
+
+    .content-container section:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        line-height: 3.85rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h2 {
+        font-size: 5rem;
+        line-height: 5.75rem;
+    }
 }
