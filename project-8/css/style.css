@@ -1,91 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-/* hey */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 :root {
-    --color-primary: #90e0ef;
-    --color-secondary: #023e8a;
+  --color-primary: #90e0ef;
+  --color-secondary: #023e8a;
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    line-height: 3.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 3.25rem;
 }
 
-.wrapper {
-    max-width: 1440px;
-    margin: auto;
-}
-
-.header, .footer {
-    background-color: var(--color-primary);
-    line-height: 16rem;
+.header,
+.footer {
+  background-color: var(--color-primary);
+  line-height: 16rem;
 }
 
 h1 {
-    font-size: 5rem;
-    text-align: center;
+  font-size: 5rem;
+  text-align: center;
 }
 
 h2 {
-    margin-bottom: 3.3rem;
+  margin-bottom: 3.3rem;
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 7rem;
+  max-width: 144rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 7rem;
+  margin: 0 auto;
+  align-items: flex-start;
+  min-height: calc(90vh);
 }
 
 .content section {
-    max-width: calc((100% - 100px) / 3);
-    border: 1px solid var(--color-secondary);
+  max-width: calc((100% - 100px) / 3);
+  min-width: 30rem;
+  border: 1px solid var(--color-secondary);
 }
 
 .hero-image {
-    padding-bottom: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding-bottom: 181%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-description {
-    padding: 3.3rem;
+  padding: 3.3rem;
 }
 
 .hero-description p:not(:last-child) {
-    padding-bottom: 3.3rem;
+  padding-bottom: 3.3rem;
 }
 
 .teemo .hero-image {
-    background-image: url("../img/teemo.jpg");
+  background-image: url("../img/new/Teemo_3.jpg");
 }
 
 .yi .hero-image {
-    background-image: url('../img/yi-square.png');
-    /* background-position: -9em; */
-
+  background-image: url("../img/new/League_Infobox_Master_Yi.jpg");
 }
 
 .darius .hero-image {
-    background-image: url('../img/darius-square.png');
-    /* background-position: -6em; */
+  background-image: url("../img/new/League_Infobox_Darius.jpg");
 }
 
 .footer {
-    font-size: 5rem;
-    text-align: center;
+  font-size: 5rem;
+  text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content section {
+    max-width: calc(90vw);
+  }
+}
