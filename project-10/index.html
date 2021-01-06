@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML boilerplate">
+  <meta name="keywords" content="HTML, test">
+  <title>Boilerplate</title>
+</head>
+
+<body>
+    <header class="header">
+      <a href="https://comedyclub.ru/" target="__blank"><img src="./img/logo.png" alt="" class="logo"></a>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://comedyclub.ru/events/" target="__blank">
+            Афиша
+            </a>
+          </li>
+          <li>
+            <a href="https://comedyclub.ru/contacts/" target="__blank">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <h1>Подай заявку на участие в новом сезоне Comedy Club на ТНТ!</h1>
+      <form action="https://formspree.io/f/xeqpveje"
+      method="POST">
+      <fieldset class="about-me">
+      <legend>Расскажи немного о себе</legend>
+      <div>
+        <label for="name">ФИО: </label>
+        <input id="name" type="name" name="name" required>
+      </div>
+      <div>
+        <label for="sex">Пол: </label>
+        <select name="sex" id="sex">
+          <option name="sex" value="man">Человек</option>
+          <option value="woman">Женщина</option>
+          <option value="dog" selected>Бульдог</option>
+        </select>
+      </div>
+     </fieldset>
+      <fieldset class="humour">
+        <legend>Теперь покажи свой юмор</legend>
+        <label for="topics" id="topics">Твои любимые темы для шуток:</label>
+        <div>
+          <input type="checkbox" name="topics" id="topics-sex" value="topics-sex">
+          <label for="topics-sex" class="topics-label">Про секс</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topics" id="topics-ex" value="topics-ex">
+          <label for="topics-ex" class="topics-label">Про бывшую</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topics" id="topics-puten" value="topics-puten">
+          <label for="topics-puten" class="topics-label">Про Путина</label>
+        </div>
+        <div>
+          <input type="checkbox" name="topics" id="topics-say-shit" value="topics-say-shit">
+          <label for="topics-say-shit" class="topics-label">Обосрать зрителей</label>
+        </div>
+        <div class="margin-bottom-2">
+          <input type="checkbox" name="topics" id="topics-brain" value="topics-brain">
+          <label for="topics-brain" class="topics-label">Интеллектуальный юмор</label>
+        </div>
+      <label for="joke">Твоя самая удачная шутка: </label>
+      <textarea name="joke" id="joke" required minlength="50" placeholder="Минимум 50 символов, чтобы мы могли оценить твой талант должным образом"></textarea>
+      <p><span class="symbols-typed">0</span>/<span class="symbols-required">50</span> символов</p>
+    </fieldset>
+      <fieldset class="contacts">
+        <legend>Как с тобой связаться?</legend>
+        <label for="icq">Твой ICQ: </label>
+        <input type="text" name="icq" id="icq" pattern="[0-9]{3}-[0-9]{3}" placeholder="xxx-xxx">
+        <label for="email" required>Твой email на всякий случай: </label>
+        <input type="email" id="email" placeholder="pavel.buldog@comedy.com">
+      </fieldset>
+      <input type="submit" value="Поехали!">
+    </form>
+    </main>
+    <footer class="footer">
+      <p>Copyright 2021</p>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

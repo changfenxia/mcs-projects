@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML boilerplate">
+  <meta name="keywords" content="HTML, test">
+  <title>Boilerplate</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-container">
+        <h1>Форма</h1>
+      </div>
+      <nav></nav>
+    </header>
+    <main class="content">
+      <form action="">
+        <div class="row">
+        <fieldset class="personal">
+          <label for="fio">ФИО: 
+            <input id="fio" type="text" name="fio" placeholder="Иванов Иван">
+            </label>
+            <label for="email">Email: 
+              <input id="email" type="email" name="email" placeholder="ivan@gmail.com">
+            </label>
+        </fieldset>
+        <fieldset class="history">
+          <label for="client">Вы клиент Альфа-банка?</label><br>
+          <input id ="client" type="radio" name="client" value="yes"> <span>Yes</span>
+          <input id="client" type="radio" name="client" value="no"> <span>No</span>
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset class="purpose"></fieldset>
+          <label for="purpose">Какой кредит вас заинтересовал?</label>
+          <select name="purpose" id="purpose">
+            <option value="avto">Автокредит</option>
+            <option value="ipoteka">Ипотека</option>
+            <option value="personal">Потребительский</option>
+          </select>
+        </fieldset>
+        <fieldset class="message">
+          <label for="message">Введите ваше сообщение: </label>
+          <textarea name="message" id="message"></textarea>
+        </fieldset>
+        <input type="submit">
+        <label for="info">
+          Я согласен на обработку информации: 
+        </label>
+        <input type="checkbox" name="info" id="info" required>
+      </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer-container"></div>
+    </footer>
+  </div>
+</body>
+
+</html>
