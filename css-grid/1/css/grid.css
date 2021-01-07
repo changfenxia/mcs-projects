@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr 3fr;
+    grid-template-rows: 5rem;
+    grid-gap: 2em 1em;
+    grid-template-areas:
+    "logo logo menu menu"
+    "helpdesk content content posts"
+    "footer footer footer footer";
+}
+
+.logo {
+    grid-area: logo;
+    place-self: center start;
+}
+
+.main-menu {
+    grid-area: menu;
+    place-self: center end;
+
+}
+
+.helpdesk-img {
+    grid-area: helpdesk;
+    align-self: center;
+}
+
+.helpdesk-img img {
+    max-width: 15em;
+    border-radius: 10%;
+}
+
+.content-area {
+    grid-area: content;
+    align-self: start;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.latest-posts {
+    grid-area: posts;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
