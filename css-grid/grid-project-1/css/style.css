@@ -1,0 +1,109 @@
+/* @import url(reset.css); */
+
+:root {
+  --color-primary: #0000ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 2.5rem;
+}
+
+.header,
+.footer {
+  padding-left: 3rem;
+  background-color: var(--color-primary);
+  line-height: 10rem;
+  color: white;
+}
+
+h1,
+h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.content-container {
+  display: grid;
+  grid-template-rows: 1fr 5fr 5fr 1fr;
+  grid-template-columns: 1fr 5fr 5fr 1fr 1fr;
+  grid-gap: 2rem;
+  grid-template-areas:
+  " . . . . . "
+  ". post1 post2 hot ."
+  ". post3 post4 hot ."
+  " . . . . .";
+}
+
+.post-1 {
+  grid-area: post1;
+}
+
+.post-2 {
+  grid-area: post2;
+}
+
+.post-3 {
+  grid-area: post3;
+}
+
+.post-4 {
+  grid-area: post4;
+}
+
+.hot-news {
+  grid-area: hot;
+  grid-gap: 2rem;
+  padding: 1rem;
+  border: 0.5rem solid hsl(0, 29%, 11%);
+  /* display: grid;
+  grid-template-rows: 2fr 2fr;
+  grid-template-columns: calc(10vw); */
+}
+
+.hot-news-img {
+  max-width: 35rem;
+}
+
+.content-container section {
+  display: grid;
+  grid-template-rows: 20rem;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2rem;
+  padding: 1rem;
+  border: 0.5rem solid hsl(0, 29%, 11%);
+}
+
+.news-block-img {
+  max-width: calc(15vw);
+  align-self: center;
+}
+
+h1 {
+  font-size: calc(2vw);
+}
+
+h2, p {
+  font-size: calc(1.5vw);
+  line-height: calc(1.75vw);
+}
+
+.header,
+.footer {
+  line-height: calc(7vw);
+}
+
+.footer p {
+  font-size: calc(2vw);
+  line-height: calc(7vw);
+}
